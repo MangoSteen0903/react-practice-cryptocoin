@@ -1,7 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import Router from "./Router";
+import { ReactQueryDevtools } from "react-query/devtools";
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -68,6 +70,7 @@ function App() {
     <>
       <GlobalStyle />
       <Router />
+      <ReactQueryDevtools initialIsOpen={false} />
     </>
   );
 }
