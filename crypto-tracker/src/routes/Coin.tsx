@@ -13,7 +13,7 @@ import { fetchCoinInfo, fetchCoinTickers } from "../api";
 import Chart from "./Chart";
 import Price from "./Price";
 const Title = styled.h1`
-  font-size: 40px;
+  font-size: 25px;
   color: ${(props) => props.theme.accentColor};
 `;
 
