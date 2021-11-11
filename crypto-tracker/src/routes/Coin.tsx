@@ -40,7 +40,9 @@ const Header = styled.header`
 const Overview = styled.main`
   width: 100%;
   height: 80px;
-  background-color: #19191f;
+  background-color: ${(props) => props.theme.bgColor};
+  border: 1px solid ${(props) => props.theme.textColor};
+  color: ${(props) => props.theme.textColor};
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -60,6 +62,7 @@ const Info = styled.div`
 
 const Description = styled.p`
   line-height: 20px;
+  color: ${(props) => props.theme.textColor};
 `;
 
 const InfoTitle = styled.span`
@@ -90,7 +93,9 @@ const BackBtn = styled.div`
   width: 30px;
   height: 30px;
   display: flex;
-  background-color: #19191f;
+  background-color: ${(props) => props.theme.bgColor};
+  border: 1px solid ${(props) => props.theme.textColor};
+  color: ${(props) => props.theme.textColor};
   justify-content: center;
   align-items: center;
   border-radius: 20px;
@@ -98,17 +103,16 @@ const BackBtn = styled.div`
 `;
 
 const Nav = styled.div<{ isActive: boolean }>`
-  background-color: #19191f;
+  background-color: white;
   width: 100%;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  color: ${(props) =>
-    props.isActive ? props.theme.accentColor : props.theme.textColor};
+  color: ${(props) => (props.isActive ? props.theme.accentColor : "black")};
   border-bottom: 3px solid
-    ${(props) => (props.isActive ? props.theme.accentColor : "#19191f")};
+    ${(props) => (props.isActive ? props.theme.accentColor : "white")};
   font-size: 12px;
 `;
 interface RouteParams {
@@ -171,7 +175,10 @@ interface PriceData {
     };
   };
 }
-function Coin() {
+interface CoinProps {
+  isDark: boolean;
+}
+function Coin({ isDark }: CoinProps) {
   const { coinId } = useParams<RouteParams>();
   const { state } = useLocation<RouteState>();
 
@@ -248,7 +255,7 @@ function Coin() {
               <Price coinId={coinId} tickersData={tickersData} />
             </Route>
             <Route path={`/:coinId/chart`}>
-              <Chart coinId={coinId} />
+              <Chart isDark={isDark} coinId={coinId} />
             </Route>
           </Switch>
         </>

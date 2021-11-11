@@ -43,7 +43,7 @@ const Container = styled.div`
 const Overview = styled.main`
   width: 100%;
   height: 50px;
-  background-color: #19191f;
+  background-color: white;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -58,6 +58,7 @@ const Overview = styled.main`
 
 const Tag = styled.h3`
   width: 50%;
+  color: black;
   font-size: 12px;
   font-weight: 600;
 `;
