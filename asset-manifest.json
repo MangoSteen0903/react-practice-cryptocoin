@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/react-practice-cryptocoin/static/js/main.c44a2a21.chunk.js",
-    "main.js.map": "/react-practice-cryptocoin/static/js/main.c44a2a21.chunk.js.map",
+    "main.js": "/react-practice-cryptocoin/static/js/main.b7999f48.chunk.js",
+    "main.js.map": "/react-practice-cryptocoin/static/js/main.b7999f48.chunk.js.map",
     "runtime-main.js": "/react-practice-cryptocoin/static/js/runtime-main.3cbfb1a7.js",
     "runtime-main.js.map": "/react-practice-cryptocoin/static/js/runtime-main.3cbfb1a7.js.map",
-    "static/js/2.b267edd7.chunk.js": "/react-practice-cryptocoin/static/js/2.b267edd7.chunk.js",
-    "static/js/2.b267edd7.chunk.js.map": "/react-practice-cryptocoin/static/js/2.b267edd7.chunk.js.map",
+    "static/js/2.4fbcabef.chunk.js": "/react-practice-cryptocoin/static/js/2.4fbcabef.chunk.js",
+    "static/js/2.4fbcabef.chunk.js.map": "/react-practice-cryptocoin/static/js/2.4fbcabef.chunk.js.map",
     "index.html": "/react-practice-cryptocoin/index.html",
-    "static/js/2.b267edd7.chunk.js.LICENSE.txt": "/react-practice-cryptocoin/static/js/2.b267edd7.chunk.js.LICENSE.txt"
+    "static/js/2.4fbcabef.chunk.js.LICENSE.txt": "/react-practice-cryptocoin/static/js/2.4fbcabef.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3cbfb1a7.js",
-    "static/js/2.b267edd7.chunk.js",
-    "static/js/main.c44a2a21.chunk.js"
+    "static/js/2.4fbcabef.chunk.js",
+    "static/js/main.b7999f48.chunk.js"
   ]
 }
